@@ -1,12 +1,12 @@
-<div class="booyah-box col-xs-10 col-xs-offset-1"
+<div class="booyah-box col-xs-10 col-xs-offset-1">
 <h2>Log in</h2>
-
+<br />
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>
-
+<br />
   <div class="field">
     <%= f.label :password %><br />
     <%= f.password_field :password, autocomplete: "off" %>
@@ -20,9 +20,10 @@
   <% end -%>
 
   <div class="actions">
-    <%= f.submit "Log in" %>
+    <%= f.submit "Log in", class: 'btn btn-primary' %>
   </div>
 <% end %>
-
+<br />
 <%= render "devise/shared/links" %>
 </div>
+
