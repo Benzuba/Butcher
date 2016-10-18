@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'simple_form'
 gem 'rails', '4.1.9'
 gem 'rails_12factor', group: :production
+gem 'carrierwave', '>= 1.0.0.beta', '< 2.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
