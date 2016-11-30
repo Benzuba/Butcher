@@ -1,0 +1,24 @@
+Tue, 15 Nov 2016 05:57:04 +0000
+README.rdoc	Thu, 08 Sep 2016 20:12:04 +0000
+app/controllers/application_controller.rb	Thu, 08 Sep 2016 20:12:04 +0000
+app/controllers/courses_controller.rb	Sun, 25 Sep 2016 17:25:42 +0000
+app/controllers/enrollments_controller.rb	Fri, 21 Oct 2016 20:56:14 +0000
+app/controllers/instructor/courses_controller.rb	Tue, 15 Nov 2016 05:38:04 +0000
+app/controllers/instructor/lessons_controller.rb	Tue, 15 Nov 2016 05:47:50 +0000
+app/controllers/instructor/sections_controller.rb	Tue, 15 Nov 2016 01:42:02 +0000
+app/controllers/lessons_controller.rb	Fri, 21 Oct 2016 20:07:25 +0000
+app/controllers/static_pages_controller.rb	Mon, 14 Nov 2016 22:17:31 +0000
+app/helpers/application_helper.rb	Thu, 08 Sep 2016 20:12:04 +0000
+app/helpers/courses_helper.rb	Fri, 23 Sep 2016 21:52:53 +0000
+app/helpers/enrollments_helper.rb	Fri, 21 Oct 2016 19:46:58 +0000
+app/helpers/instructor/courses_helper.rb	Thu, 22 Sep 2016 19:28:00 +0000
+app/helpers/instructor/lessons_helper.rb	Fri, 14 Oct 2016 19:56:06 +0000
+app/helpers/instructor/sections_helper.rb	Tue, 27 Sep 2016 23:04:21 +0000
+app/helpers/lessons_helper.rb	Tue, 18 Oct 2016 00:50:35 +0000
+app/helpers/static_pages_helper.rb	Thu, 08 Sep 2016 20:35:38 +0000
+app/models/course.rb	Tue, 15 Nov 2016 05:39:12 +0000
+app/models/enrollment.rb	Fri, 21 Oct 2016 20:36:52 +0000
+app/models/lesson.rb	Tue, 15 Nov 2016 05:40:13 +0000
+app/models/section.rb	Tue, 15 Nov 2016 05:35:32 +0000
+app/models/user.rb	Mon, 14 Nov 2016 23:05:03 +0000
+app/uploaders/image_uploader.rb	Mon, 14 Nov 2016 22:17:31 +0000
