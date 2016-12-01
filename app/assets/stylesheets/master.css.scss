@@ -1,3 +1,6 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 .navbar {
   border-radius:0;
   font-family: "Helvetica Neue", Helvetica;
@@ -11,8 +14,9 @@
   font-weight: 100;
   color:white;
 }
+
 .hero {
-  background: url('hero.jpg') no-repeat center center fixed;
+  background: url('hero.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -26,7 +30,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .frosty {
-  background:rgba(0,0,0, 0.5);
+  background:rgba(0,0,0,0.5);
   color:white;
 }
 
@@ -47,7 +51,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 body {
-  background: url('bg.png');
+  background:url('bg.png');
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
 
@@ -59,10 +63,16 @@ body {
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   padding:10px;
+  margin-top:10px;
+  margin-bottom:15px;
+}
+
+.booyah-box h2, .booyah-box h1 {
+  margin:10px;
 }
 
 .clr {
-    clear:both;
+  clear:both;
 }
 
 .field_with_errors {
@@ -85,20 +95,22 @@ body {
   padding: 20px;
 }
 
-.lesson a {
+.lesson a b {
   color:white;
   font-family: "Helvetica Neue",Helvetica;
   font-weight:100;
   font-size: 15px;
 }
 
-.lesson a b {
-  font-weight: 100;
-  font-size:25px;
-}
-
 ul {
       list-style-type: none;
+}
+
+.section-li {
+  border: 1px solid;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding:20px;
+  margin:20px;
 }
 
 ul .header {
@@ -107,13 +119,6 @@ ul .header {
 
 ul .header .glyphicon {
   font-size:20px;
-}
-
-.section-li {
-  border: 1px solid;
-  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
-  padding:20px;
-  margin:32
 }
 
 .lessons li {
