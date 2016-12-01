@@ -1,4 +1,5 @@
-Rails.application.routes.draw do
+
+Flixter::Application.routes.draw do
   devise_for :users
   resource :dashboard, only: [:show]
   root 'static_pages#index'
@@ -15,9 +16,10 @@ Rails.application.routes.draw do
       resources :lessons, only: [:create]
     end
     resources :courses, only: [:new, :create, :show] do
-      resources :sections, only: [:new, :create]
+      resources :sections, only: [:create]
     end
   end
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -11,10 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161115010552) do
+ActiveRecord::Schema.define(version: 20161201150840) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "blahs", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "courses", force: true do |t|
     t.string   "title"
@@ -55,6 +60,7 @@ ActiveRecord::Schema.define(version: 20161115010552) do
     t.integer  "course_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "row_order"
   end
 
   add_index "sections", ["course_id"], name: "index_sections_on_course_id", using: :btree
