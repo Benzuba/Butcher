@@ -7,9 +7,8 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-  
-  def enrolled_in?(course)
-    return enrolled_courses.include?(course)
-  end
 
+  def enrolled_in?(course)
+    enrolled_courses.include?(course)
+  end
 end

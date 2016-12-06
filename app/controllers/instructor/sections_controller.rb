@@ -17,7 +17,7 @@ class Instructor::SectionsController < ApplicationController
 
   def require_authorized_for_current_section
     if current_section.course.user != current_user
-      render text: "Unauthorized", status: :unauthorized
+      render text: 'Unauthorized', status: :unauthorized
     end
   end
 
@@ -25,21 +25,20 @@ class Instructor::SectionsController < ApplicationController
     @current_section ||= Section.find(params[:id])
   end
 
-
   def require_authorized_for_current_course
     if current_course.user != current_user
-      render text: "Unauthorized", status: :unauthorized
+      render text: 'Unauthorized', status: :unauthorized
     end
   end
 
   helper_method :current_course
-    def current_course
+  def current_course
     if params[:course_id]
       @current_course ||= Course.find(params[:course_id])
     else
       current_section.course
     end
-  end
+end
 
   def section_params
     params.require(:section).permit(:title, :row_order_position)

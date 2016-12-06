@@ -1,8 +1,5 @@
 class CreateBlahs < ActiveRecord::Migration
   def change
-    create_table :blahs do |t|
-
-      t.timestamps
-    end
+    create_table :blahs, &:timestamps
   end
 end
