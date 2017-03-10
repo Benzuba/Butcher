@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'simple_form'
-gem 'rails', '4.1.9'
-gem 'rails_12factor', group: :production
 gem 'carrierwave', '>= 1.0.0.beta', '< 2.0'
-gem 'mini_magick', '~> 4.3.1'
-gem 'stripe'
 gem 'figaro'
 gem 'fog'
+gem 'mini_magick', '~> 4.3.1'
+gem 'rails', '4.1.9'
+gem 'rails_12factor', group: :production
+gem 'simple_form'
+gem 'stripe'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -33,9 +33,9 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring', group: :development
 gem 'devise', '>= 3.2.4'
 gem 'ranked-model'
+gem 'spring', group: :development
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

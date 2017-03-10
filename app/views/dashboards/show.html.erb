@@ -1,5 +1,5 @@
 <br />
-
+<div id="wrap">
 <div class="booyah-box col-xs-10 col-xs-offset-1">
   <h1>What I'm Learning</h1>
   <% current_user.enrolled_courses.each do |course| %>
@@ -18,7 +18,7 @@
     <hr class="col-xs-8 col-xs-offset-2">
     <br class="clr" / >
   <% end %>
-  
+
 
   <h1>What I'm Teaching</h1>
   <% current_user.courses.each do |course| %>
@@ -31,8 +31,9 @@
     <div class="col-xs-12 col-sm-8">
       <%= course.description %>
     </div>
-    
+
     <div class="col-xs-12 col-sm-4 text-center">
       <%= link_to "More Info...", course_path(course), class: 'btn btn-lg btn-primary' %>
-    </div>
+
   <% end %>
+</div>  

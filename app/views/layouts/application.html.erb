@@ -58,6 +58,7 @@
 
  <br class="clr" />
 
+
   <div id="footer">
     <div class="container">
       <div class="col-xs-12 col-sm-3">
@@ -65,29 +66,23 @@
         <br />
         <%= link_to 'Teach a Course', new_instructor_course_path %>
         <br />
-        <%= link_to 'My Dashboard', dashboard_path %>
+        <%= link_to 'Teacher Dashboard', dashboard_path %>
       </div>
       <div class="col-xs-12 col-sm-3">
-        <b>About</b>
+        <b>Students</b>
         <br />
-        <%= link_to 'Team', '#' %>
+        <%= link_to 'Open Enrollment', courses_path %>
         <br />
-        <%= link_to 'Careers', '#' %>
+        <%= link_to 'Student Dashboard', dashboard_path %>
         <br />
-        <%= link_to 'Privacy Policy', privacy_path %>
       </div>
       <div class="col-xs-12 col-sm-3">
         <b>Contact</b>
         <br />
         zubes33@gmail.com
-        <br />
-        3552 Grim Ave.
-        <br />
-        San Diego, Ca
       </div>
       <div class="col-xs-12 col-sm-3 social">
         <b>Social</b>
-        <br />
         <br />
         <%= link_to 'http://github.com/benzuba11' do %>
           <%= image_tag 'github.png', class: 'social-button' %>
