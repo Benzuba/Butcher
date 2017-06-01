@@ -26,7 +26,6 @@ development:
   encoding: unicode
   database: flixter_development
   pool: 5
-  username: postgres
   password: password
   host: localhost
 
@@ -65,7 +64,6 @@ test:
   encoding: unicode
   database: flixter_test
   pool: 5
-  username: postgres
   password: password
   host: localhost
 
@@ -93,6 +91,5 @@ production:
   encoding: unicode
   database: flixter_production
   pool: 5
-  username: postgres
   password: password
   host: localhost
