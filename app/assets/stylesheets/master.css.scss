@@ -1,6 +1,15 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.heading-border{
+  background-color: grey;
+  text-align: center;
+  border-style: solid;
+  border-color: blue;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 200;
+
+}
 .navbar {
   border-radius:0;
   font-family: "Helvetica Neue", Helvetica;

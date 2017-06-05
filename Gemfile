@@ -9,6 +9,7 @@ gem 'rails', '4.1.9'
 gem 'rails_12factor', group: :production
 gem 'simple_form'
 gem 'stripe'
+gem "font-awesome-rails"
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
